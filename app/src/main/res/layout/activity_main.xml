@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_selectMotor_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="电机选择：" />
+
+        <Spinner
+            android:id="@+id/sp_selectMotor_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_open_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开串口" />
+
+    <Button
+        android:id="@+id/btn_close_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭串口" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="移动速度：" />
+
+        <EditText
+            android:id="@+id/et_speed_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="1000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_speed_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="速度设置" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="方向设定：" />
+
+        <Spinner
+            android:id="@+id/sp_selectOrientation_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="移动步数：" />
+
+        <EditText
+            android:id="@+id/et_distance_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="1000" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_addMove_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增量移动" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="相对位置：" />
+
+        <EditText
+            android:id="@+id/et_position_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="1000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_absoluteMove_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绝对移动" />
+
+    <Button
+        android:id="@+id/btn_back_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="回到原点" />
+
+    <Button
+        android:id="@+id/btn_searchPosition_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="位置查询"/>
+
+    <Button
+        android:id="@+id/btn_changePosition_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="位置更改"/>
+
+
+    <Button
+        android:id="@+id/btn_stop_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止" />
+
+    <ListView
+        android:id="@+id/lv_data_receive_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
